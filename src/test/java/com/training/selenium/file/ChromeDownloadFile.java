@@ -27,7 +27,8 @@ public class ChromeDownloadFile {
 	public void testUpload() {
 		
 		//WebElement we = driver.findElements(By.className("quick-download"));
-		WebElement downloadElement = driver.findElement(By.className("quick-download"));
+		//WebElement downloadElement = driver.findElement(By.className("quick-download"));
+		WebElement downloadElement = driver.findElement(By.xpath("//div[@id='photo-details']/section/div[2]/div[2]/div/a/span"));
 		downloadElement.click();
 		
 		//((WebElement)driver.findElement((By.className("quick-download")))).click();
