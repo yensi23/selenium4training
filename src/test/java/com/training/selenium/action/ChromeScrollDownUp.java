@@ -1,4 +1,4 @@
-package com.sample.selenium.action;
+package com.training.selenium.action;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -28,6 +28,11 @@ public class ChromeScrollDownUp {
 
 	@Test
 	public void testGooglePage() throws InterruptedException{
+		
+		if(driver.findElement(By.id("S3BnEe")).getText().equals("S3BnEe")) {
+			driver.findElement(By.className("QS5gu sy4vM")).click();
+		}
+		
 		Actions action = new Actions(driver);
 		WebElement searchbox = driver.findElement(By.name("q"));
 		searchbox.sendKeys("selenium");
@@ -48,6 +53,6 @@ public class ChromeScrollDownUp {
 	
 	@AfterAll
 	static public void tearDown() {
-		driver.quit();
+		//driver.quit();
 	}
 }

@@ -1,4 +1,4 @@
-package com.sample.selenium.action;
+package com.training.selenium.action;
 
 
 import java.time.Duration;

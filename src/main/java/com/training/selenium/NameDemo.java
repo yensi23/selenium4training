@@ -1,4 +1,4 @@
-package com.sample.selenium;
+package com.training.selenium;
 
 
 

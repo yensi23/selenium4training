@@ -25,8 +25,8 @@ public class GoogleTest3 {
   
   @AfterAll
   static public void tearDown() {
-	  if (driver != null)
-		  driver.quit();
+	  //if (driver != null)
+		  //driver.quit();
   }
   
   

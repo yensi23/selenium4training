@@ -1,4 +1,4 @@
-package com.sample.selenium.file;
+package com.training.selenium.file;
 
 
 import static org.junit.jupiter.api.Assertions.assertNotNull;
