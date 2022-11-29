@@ -1,4 +1,4 @@
-package com.training.selenium;
+package com.training.selenium.multibrowser;
 
 
 
@@ -13,7 +13,7 @@ import org.openqa.selenium.WebDriver;
 
 
 
-public class GoogleTest1 {
+public class GoogleChromeTest1 {
   private static WebDriver driver;  
   
   @Test
