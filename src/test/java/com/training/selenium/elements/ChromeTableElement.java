@@ -23,13 +23,13 @@ public class ChromeTableElement {
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
-		driver.get("https://www.w3schools.com/tags/tag_table.asp");
+		driver.get("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_table_test");
 	}
 
 	@Test
 	public void testGooglePage() {
 		
-		String innerText = driver.findElement(By.xpath("//tr[2]/td[2]")).getText(); 
+		String innerText = driver.findElement(By.xpath("=//td[2]")).getText(); 
 		
 		System.out.println(innerText); 
 		assertEquals("$100", innerText);

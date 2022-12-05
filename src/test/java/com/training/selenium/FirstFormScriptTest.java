@@ -32,7 +32,7 @@ public class FirstFormScriptTest {
         String value = message.getText();
         assertEquals("Received!", value);
 
-        driver.quit();
+        //driver.quit();
     }
 
 }

@@ -24,7 +24,7 @@ public class ChromeUploadDownloadFile {
 	@BeforeAll
 	static public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -34,9 +34,9 @@ public class ChromeUploadDownloadFile {
 	@Test
 	public void testUpload() {
 		
-		WebElement uploadElement = driver.findElement(By.id("inputFile"));
+		WebElement uploadElement = driver.findElement(By.id("uploadFile-Input"));
 		
-		uploadElement.sendKeys("C:\\borrame\\seleniumscreenshoot\\chrome_screenshoot_1569350969600.png");
+		uploadElement.sendKeys("C:\\borrame\\seleniumscreenshoot\\chrome_screenshoot_1669592062234.png");
 		
 		driver.findElement(By.id("btnUpload")).click();
 				

@@ -29,9 +29,9 @@ public class ChromeUploadFile {
 	@Test
 	public void testUpload() {
 		
-		WebElement uploadElement = driver.findElement(By.id("inputFile"));
+		WebElement uploadElement = driver.findElement(By.id("uploadFile-Input"));
 		
-		uploadElement.sendKeys("C:\\borrame\\seleniumscreenshoot\\chrome_screenshoot_1569350969600.png");
+		uploadElement.sendKeys("C:\\borrame\\seleniumscreenshoot\\chrome_screenshoot_1669592062234.png");
 		
 		driver.findElement(By.id("btnUpload")).click();
 				

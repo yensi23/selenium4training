@@ -20,7 +20,7 @@ public class ChromeDragAndDrop {
 	@BeforeAll
 	static public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
@@ -41,6 +41,7 @@ public class ChromeDragAndDrop {
         //dragAndDrop(source, target) method accepts two parameters source and locator. 
         //used dragAndDrop method to drag and drop the source locator to target locator
 		action.dragAndDrop(sourceLocator, targetLocator).build().perform();
+
 	}
 	
 	@AfterAll

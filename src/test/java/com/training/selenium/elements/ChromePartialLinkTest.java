@@ -19,7 +19,6 @@ public class ChromePartialLinkTest {
 	@BeforeAll
 	static public void setUp() {
 		
-		System.setProperty("webdriver.chrome.driver","./src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 		driver.manage().window().maximize();

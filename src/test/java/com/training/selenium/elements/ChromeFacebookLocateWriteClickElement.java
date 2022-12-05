@@ -25,10 +25,14 @@ public class ChromeFacebookLocateWriteClickElement {
 	@Test
 	public void testInstantiatingEmailFacebookPage() {
 		
+	
+		driver.findElement(By.xpath("//html[@id='facebook']/body/div[3]/div[2]/div/div/div/div/div[3]/button[2]")).click();
+		
 		WebElement mailElement = driver.findElement(By.id("email"));
 		mailElement.sendKeys("ss");
 		
-		driver.findElement(By.id("loginbutton")).click();
+		//driver.findElement(By.id("loginbutton")).click();
+		driver.findElement(By.xpath("//button[contains(.,'Iniciar sesión')]")).click();
 		
 		assertNotNull( driver.findElement(By.id("error_box")));
 			
